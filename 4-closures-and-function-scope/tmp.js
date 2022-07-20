@@ -1,7 +1,10 @@
-const foo = function() {
-  return function() {
-    return 10;
-  }();
-}();
+function countdown(count) {
+  (function logNumbers(n) {
+    for(let i = n; i >= 0; i--) {
+      console.log(i);
+    }
+    console.log('Done');
+  })(count);
+}
 
-console.log(foo);
+countdown(8);

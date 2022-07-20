@@ -18,7 +18,7 @@
 **Global variables and Function Declarations**
 
 - When we declare global variables with `var` or functions, JS adds them to global object as properties.
-- The behaviour of the `var` variable appears to be identical to what happens when you dont declare the variable. However, you can delete global variables that you don't declare, but not those that you did.
+- The behaviour of the `var` variable appears to be identical to what happens when you dont declare the variable. However, you can delete global variables that you don't declare, but not those that you did with `var`.
 - ie - you CAN NOT delete functions and var properties from the global object. Its like JS tries to the hide the fact that `var` variable and functions are global object properties.
 
 **Strict Mode and the Glocal Object**
